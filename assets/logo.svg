@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>Rushlight</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241d17"/>
+      <stop offset="1" stop-color="#14110e"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffc35a"/>
+      <stop offset="1" stop-color="#ff6a3d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.56" r="0.5">
+      <stop offset="0" stop-color="#ff8a3d" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ff8a3d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- fond -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="286" r="190" fill="url(#glow)"/>
+
+  <!-- forme d'onde : les rushs -->
+  <g fill="#ece4d6">
+    <rect x="58"  y="246" width="30" height="80"  rx="15"/>
+    <rect x="110" y="196" width="30" height="180" rx="15"/>
+    <rect x="372" y="206" width="30" height="160" rx="15"/>
+    <rect x="424" y="251" width="30" height="70"  rx="15"/>
+  </g>
+
+  <!-- flamme : le moment fort -->
+  <path fill="url(#flame)" d="M256 104
+    C 292 158, 344 202, 344 282
+    C 344 340, 305 382, 256 382
+    C 207 382, 168 340, 168 282
+    C 168 236, 192 204, 216 180
+    C 214 214, 228 238, 248 244
+    C 236 200, 232 150, 256 104 Z"/>
+  <path fill="#ffe7b0" d="M258 250
+    C 282 278, 300 300, 300 328
+    C 300 354, 281 370, 258 370
+    C 235 370, 216 354, 216 328
+    C 216 302, 236 284, 258 250 Z"/>
+</svg>

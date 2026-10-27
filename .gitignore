@@ -1,0 +1,6 @@
+# Fichiers générés : Rushlight.zxp est recréé par sign.ps1 (certificat jetable), .rnd par la signature
+*.zxp
+*.p12
+.rnd
+
+dist/

@@ -1,0 +1,73 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 12px;
+  background: #232323;
+  color: #d4d4d4;
+  font: 12px/1.4 "Segoe UI", system-ui, sans-serif;
+}
+h1 { display: flex; align-items: center; gap: 8px; font-size: 14px; margin: 0 0 12px; color: #fff; }
+.logo { width: 24px; height: 24px; }
+.version { font-size: 11px; font-weight: 400; color: #8a8a8a; }
+section { margin-bottom: 14px; }
+label { display: block; margin-bottom: 8px; }
+input, select {
+  display: block;
+  width: 100%;
+  margin-top: 3px;
+  padding: 4px 6px;
+  background: #1a1a1a;
+  color: #e6e6e6;
+  border: 1px solid #3c3c3c;
+  border-radius: 3px;
+  font: inherit;
+}
+input[type=range] { padding: 0; }
+label.check { display: flex; align-items: center; gap: 6px; }
+label.check input { display: inline; width: auto; margin: 0; }
+.levels { margin: -4px 0 8px; color: #8a8a8a; font-size: 11px; }
+.row { display: flex; gap: 8px; }
+.row label { flex: 1; }
+button {
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 7px;
+  border: 0;
+  border-radius: 3px;
+  background: #2d8ceb;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:hover:not(:disabled) { background: #3d9bf5; }
+button:disabled { opacity: .4; cursor: default; }
+button.secondary { background: #3a3a3a; font-weight: 400; }
+button.secondary:hover { background: #474747; }
+.status {
+  min-height: 40px;
+  padding: 8px;
+  margin-bottom: 12px;
+  background: #1a1a1a;
+  border-left: 3px solid #2d8ceb;
+  white-space: pre-wrap;
+}
+.status.error { border-color: #e5534b; color: #ffb4ae; }
+.status.ok { border-color: #3fb950; }
+details { margin-bottom: 10px; }
+summary { cursor: pointer; margin-bottom: 6px; }
+.hint { color: #8a8a8a; font-size: 11px; }
+h2 { font-size: 12px; margin: 0 0 8px; color: #fff; }
+.hl-list { margin: 4px 0 8px; padding-left: 0; list-style: none; }
+.hl-list li { display: flex; align-items: flex-start; gap: 6px; padding: 3px 0; }
+.hl-list li span { flex: 1; cursor: pointer; }
+.hl-list li span:hover { color: #f0a030; }
+.hl-list .hl-ignore {
+  width: auto;
+  margin: 0;
+  padding: 0 6px;
+  background: transparent;
+  color: #8a8a8a;
+  font-weight: 400;
+}
+.hl-list .hl-ignore:hover { background: #3a3a3a; color: #e5534b; }

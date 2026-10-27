@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Rushlight</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1><img src="img/logo-64.png" class="logo" alt="">Rushlight <span id="version" class="version"></span></h1>
+
+  <section>
+    <label><span data-i18n="sourceLabel"></span>
+      <select id="track"></select>
+    </label>
+    <button id="refresh" class="secondary" data-i18n="refreshBtn"></button>
+  </section>
+
+  <section>
+    <label><span data-i18n="modeLabel"></span>
+      <select id="preset">
+        <option value="custom" data-i18n="preset_custom"></option>
+        <option value="gaming">Gaming</option>
+        <option value="vlog">Vlog / face cam</option>
+        <option value="podcast">Podcast / interview</option>
+        <option value="bestof" data-i18n="preset_bestof"></option>
+      </select>
+    </label>
+    <div id="presetInfo" class="levels"></div>
+    <label class="check">
+      <input id="auto" type="checkbox" checked> <span data-i18n="autoLabel"></span>
+    </label>
+    <label><span data-i18n="thresholdLabel"></span> <span id="thresholdVal"></span>
+      <input id="threshold" type="range" min="-70" max="-10" step="1" value="-35">
+    </label>
+    <div id="levels" class="levels"></div>
+    <label><span data-i18n="minSilenceLabel"></span>
+      <input id="minSilence" type="number" min="100" step="50" value="500">
+    </label>
+    <div class="row">
+      <label><span data-i18n="padBeforeLabel"></span>
+        <input id="padBefore" type="number" min="0" step="10" value="100">
+      </label>
+      <label><span data-i18n="padAfterLabel"></span>
+        <input id="padAfter" type="number" min="0" step="10" value="150">
+      </label>
+    </div>
+    <label class="check">
+      <input id="cutCalm" type="checkbox"> <span data-i18n="cutCalmLabel"></span>
+    </label>
+    <label><span data-i18n="minCalmLabel"></span>
+      <input id="minCalm" type="number" min="1" step="1" value="5">
+    </label>
+    <label><span data-i18n="actionLabel"></span>
+      <select id="mode">
+        <option value="ripple" data-i18n="mode_ripple"></option>
+        <option value="gaps" data-i18n="mode_gaps"></option>
+        <option value="markers" data-i18n="mode_markers"></option>
+      </select>
+    </label>
+    <label class="check">
+      <input id="closeGaps" type="checkbox" checked> <span data-i18n="closeGapsLabel"></span>
+    </label>
+    <label><span data-i18n="zoneLabel"></span>
+      <select id="zone"></select>
+    </label>
+  </section>
+
+  <section>
+    <button id="analyze" data-i18n="analyzeBtn"></button>
+    <button id="apply" disabled data-i18n="applyBtn"></button>
+    <button id="closeGapsNow" class="secondary" data-i18n="closeGapsBtn"></button>
+    <button id="relinkNow" class="secondary" data-i18n="relinkBtn" data-i18n-title="relinkTitle"></button>
+    <button id="markDone" class="secondary" data-i18n="markDoneBtn" data-i18n-title="markDoneTitle"></button>
+  </section>
+
+  <div id="status" class="status" data-i18n="statusStart"></div>
+
+  <section>
+    <label class="check">
+      <input id="backup" type="checkbox" checked> <span data-i18n="backupLabel"></span>
+    </label>
+    <div id="backupInfo" class="levels"></div>
+    <button id="openBackups" class="secondary" data-i18n="openBackupsBtn"></button>
+  </section>
+
+  <section>
+    <h2 data-i18n="hlTitle"></h2>
+    <div class="row">
+      <label><span data-i18n="hlCountLabel"></span>
+        <input id="hlCount" type="number" min="1" max="30" value="5">
+      </label>
+      <label><span data-i18n="hlLengthLabel"></span>
+        <input id="hlLength" type="number" min="3" max="60" value="10">
+      </label>
+    </div>
+    <button id="hlFind" class="secondary" data-i18n="hlFindBtn"></button>
+    <button id="hlBestOf" class="secondary" disabled data-i18n="hlBestOfBtn"></button>
+    <div id="hlSummary" class="levels"></div>
+    <ol id="hlList" class="hl-list"></ol>
+    <button id="hlClear" class="secondary" disabled data-i18n="hlClearBtn" data-i18n-title="hlClearTitle"></button>
+  </section>
+
+  <details>
+    <summary data-i18n="settingsSummary"></summary>
+    <label><span data-i18n="langLabel"></span>
+      <select id="lang">
+        <option value="auto" data-i18n="lang_auto"></option>
+        <option value="fr">Français</option>
+        <option value="en">English</option>
+      </select>
+    </label>
+    <label><span data-i18n="ffmpegLabel"></span>
+      <input id="ffmpeg" type="text" placeholder="ffmpeg">
+    </label>
+    <button id="testFfmpeg" class="secondary" data-i18n="testBtn"></button>
+  </details>
+
+  <p class="hint" data-i18n="hint"></p>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/highlights.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
