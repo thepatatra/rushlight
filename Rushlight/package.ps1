@@ -1,4 +1,4 @@
-# Signe Rushlight puis prépare le ZIP de publication : dist\Rushlight-vX.Y.Z.zip
+﻿# Signe Rushlight puis prépare le ZIP de publication : dist\Rushlight-vX.Y.Z.zip
 # (scripts d'installation + extension signée + licence), à joindre à une « release » GitHub.
 $ErrorActionPreference = 'Stop'
 
