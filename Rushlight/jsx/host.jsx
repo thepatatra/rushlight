@@ -568,6 +568,13 @@ function acl_createBestOf(payload) {
         app.project.openSequence(copy.sequenceID);
         copy = app.project.activeSequence;
 
+        // la copie reprend tous les marqueurs de l'original (zones coupées, moments forts, silences…) : inutiles
+        // dans un best of, on les retire. Double vérification que c'est bien la copie, jamais l'original.
+        if (copy.sequenceID !== seq.sequenceID) {
+            var copyMarkers = acl_markers(copy);
+            for (i = 0; i < copyMarkers.length; i++) copy.markers.deleteMarker(copyMarkers[i]);
+        }
+
         // tout ce qui n'est pas un moment fort est retiré
         var ranges = payload.ranges, holes = [], cursor = 0;
         var end = Number(copy.end) / TICKS_PER_SECOND;

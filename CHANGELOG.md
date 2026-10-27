@@ -2,6 +2,12 @@
 
 Rushlight is still in 0.x versions: it is used and improved regularly, and the design is still being polished.
 
+## 0.10.1
+- The best-of sequence no longer carries over the original's markers (cut zones, highlights, silences). The
+  original sequence keeps all of its markers.
+- Release packages no longer include the development debug file, and the signing certificate contains no
+  location information.
+
 ## 0.10.0 — first public release
 - The panel is available in English and French. It follows Premiere's language, and can be changed in
   Settings > Language.

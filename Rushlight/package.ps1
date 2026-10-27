@@ -6,7 +6,7 @@ $source = $PSScriptRoot
 $root = Split-Path $source -Parent
 $version = ([xml](Get-Content (Join-Path $source 'CSXS\manifest.xml') -Raw)).ExtensionManifest.ExtensionBundleVersion
 
-& (Join-Path $source 'sign.ps1')
+& (Join-Path $source 'sign.ps1') -Release
 
 $dist = Join-Path $root 'dist'
 $stage = Join-Path $dist "Rushlight-v$version"

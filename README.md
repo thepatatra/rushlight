@@ -32,6 +32,22 @@ checks every cut. At the slightest problem it stops and tells you which backup t
 
 The panel is available in English and French: it follows Premiere's language, and you can change it in Settings.
 
+## From a long session to Shorts, TikToks and clips
+
+This is the part I use the most after cutting the silences. On a three-hour session, finding the five moments
+worth posting usually means watching everything again. Rushlight does a first pass for you:
+
+1. Click "Find new highlights": the most intense passages (raised voice, fast talking, exclamations, laughter) get
+   an orange marker, numbered from best to least good, each with the reason it was picked.
+2. Click a moment in the list to jump to it and check it. If it's not good, the cross removes it from the
+   suggestions for good, and the next search brings new ones.
+3. "Create a best-of sequence" puts all the moments you kept end to end in a new sequence, ready to trim and export,
+   without touching your original edit.
+
+With the Length setting you choose what you get: short 8-second moments for a hook or a fast-paced recap, or 20 to
+30-second passages that work as standalone Shorts, TikToks or Reels. It only listens to the audio, so it won't
+understand a quiet but important line, but it takes care of most of the searching.
+
 ## Installation
 
 You need Windows, Premiere Pro 2021 or later (I use it on the 2026 version) and ffmpeg, which is used to analyze

@@ -1,4 +1,6 @@
 ﻿# Signe Rushlight (certificat maison) -> Rushlight.zxp, à relancer après chaque modification du code.
+# -Release : version publique, sans le fichier .debug (qui ouvre un accès de débogage au panneau, utile en développement).
+param([switch]$Release)
 $ErrorActionPreference = 'Stop'
 
 $source = $PSScriptRoot
@@ -15,7 +17,9 @@ if (-not (Test-Path $tool)) {
 $stage = Join-Path $work 'stage\com.rushlight'
 if (Test-Path (Join-Path $work 'stage')) { Remove-Item (Join-Path $work 'stage') -Recurse -Force }
 New-Item -ItemType Directory -Force $stage | Out-Null
-foreach ($item in 'CSXS', 'css', 'img', 'js', 'jsx', 'index.html', '.debug') {
+$items = 'CSXS', 'css', 'img', 'js', 'jsx', 'index.html'
+if (-not $Release) { $items += '.debug' }
+foreach ($item in $items) {
     Copy-Item (Join-Path $source $item) $stage -Recurse -Force
 }
 
@@ -24,7 +28,8 @@ $zxp = Join-Path $work 'Rushlight.zxp'
 $password = [guid]::NewGuid().ToString('N')
 foreach ($f in $cert, $zxp) { if (Test-Path $f) { Remove-Item $f } }
 
-& $tool -selfSignedCert FR IDF Rushlight Rushlight $password $cert
+# certificat neutre : aucune information personnelle (ni région, ni nom)
+& $tool -selfSignedCert FR Rushlight Rushlight Rushlight $password $cert
 & $tool -sign $stage $zxp $cert $password -tsa http://timestamp.digicert.com
 & $tool -verify $zxp
 if ($LASTEXITCODE -ne 0) { throw 'La signature a échoué.' }

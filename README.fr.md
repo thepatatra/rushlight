@@ -32,6 +32,23 @@ modification et vérifie chaque coupe. Au moindre souci elle s'arrête et indiqu
 
 Le panneau est en français et en anglais : il suit la langue de Premiere, et on peut la changer dans Réglages.
 
+## D'une longue session à des Shorts, des TikTok et des clips
+
+C'est la partie que j'utilise le plus après avoir coupé les silences. Sur une session de trois heures, retrouver
+les cinq moments qui valent le coup d'être postés oblige normalement à tout revoir. Rushlight fait un premier tri :
+
+1. "Trouver de nouveaux moments forts" place un marqueur orange sur les passages les plus intenses (voix qui
+   monte, débit rapide, exclamations, rires), numérotés du meilleur au moins bon, avec la raison du choix.
+2. Un clic sur un moment de la liste emmène dessus pour le vérifier. S'il ne convient pas, la croix le retire
+   définitivement des propositions, et la recherche suivante en propose d'autres.
+3. "Créer une séquence best of" met bout à bout tous les moments gardés dans une nouvelle séquence, prête à
+   ajuster et à exporter, sans toucher à votre montage d'origine.
+
+Le réglage Durée décide de ce que vous obtenez : des moments courts de 8 secondes pour une accroche ou un récap
+nerveux, ou des passages de 20 à 30 secondes qui tiennent seuls en Shorts, TikTok ou Reels. L'extension n'écoute
+que le son, donc elle ne comprendra pas une phrase importante dite calmement, mais elle fait l'essentiel des
+recherches à votre place.
+
 ## Installation
 
 Il faut Windows, Premiere Pro 2021 ou plus récent (je l'utilise sur la version 2026) et ffmpeg, qui sert à
