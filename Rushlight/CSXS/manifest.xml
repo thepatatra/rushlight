@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ExtensionManifest Version="7.0" ExtensionBundleId="com.rushlight" ExtensionBundleVersion="0.10.1" ExtensionBundleName="Rushlight"
+<ExtensionManifest Version="7.0" ExtensionBundleId="com.rushlight" ExtensionBundleVersion="0.10.2" ExtensionBundleName="Rushlight"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ExtensionList>
-    <Extension Id="com.rushlight.panel" Version="0.10.1" />
+    <Extension Id="com.rushlight.panel" Version="0.10.2" />
   </ExtensionList>
   <ExecutionEnvironment>
     <HostList>

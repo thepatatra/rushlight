@@ -50,8 +50,13 @@ understand a quiet but important line, but it takes care of most of the searchin
 
 ## Installation
 
-You need Windows, Premiere Pro 2021 or later (I use it on the 2026 version) and ffmpeg, which is used to analyze
-the audio. To install ffmpeg, in PowerShell:
+You need Windows, Premiere Pro 2021 or later and ffmpeg, which is used to analyze the audio.
+
+Rushlight is tested on Premiere Pro 2026 (versions 26.0 and 26.5). It should also run on earlier versions: if you
+try it on another one, feel free to let me know in an [issue](https://github.com/thepatatra/rushlight/issues) how
+it went.
+
+To install ffmpeg, in PowerShell:
 
 ```
 winget install Gyan.FFmpeg

@@ -2,6 +2,10 @@
 
 Rushlight is still in 0.x versions: it is used and improved regularly, and the design is still being polished.
 
+## 0.10.2
+- Tested on Premiere Pro 2026 versions 26.0 and 26.5.
+- The installer also prepares the upcoming Premiere versions (CEP 14 to 20).
+
 ## 0.10.1
 - The best-of sequence no longer carries over the original's markers (cut zones, highlights, silences). The
   original sequence keeps all of its markers.

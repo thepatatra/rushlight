@@ -4,8 +4,9 @@ $ErrorActionPreference = 'Stop'
 $source = $PSScriptRoot
 $target = Join-Path $env:APPDATA 'Adobe\CEP\extensions\com.rushlight'
 
-# Autorise les extensions non signées (nécessaire pour une extension perso)
-foreach ($v in 9..13) {
+# Autorise les extensions non signées (nécessaire pour une extension perso).
+# Les versions de CEP à venir sont incluses d'avance, pour les prochaines versions de Premiere.
+foreach ($v in 9..20) {
     $key = "HKCU:\Software\Adobe\CSXS.$v"
     if (-not (Test-Path $key)) { New-Item -Path $key -Force | Out-Null }
     Set-ItemProperty -Path $key -Name 'PlayerDebugMode' -Value '1' -Type String
