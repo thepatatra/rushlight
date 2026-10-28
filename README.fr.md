@@ -6,6 +6,8 @@
 
 Une extension pour Premiere Pro qui enlève les silences de mes rushs et me montre où sont les bons passages.
 
+https://github.com/user-attachments/assets/a47fbd04-cd38-44be-bad5-1fefa6bcffaf
+
 Je l'ai commencée parce que je passais trop de temps à dérusher mes sessions de jeu. Trois ou quatre heures
 d'enregistrement, avec des menus, des temps morts, des moments où je ne dis rien... Couper tout ça à la main,
 c'est long et pénible. Rushlight écoute le son de la séquence, coupe les blancs, recolle la timeline et
