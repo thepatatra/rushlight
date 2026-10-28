@@ -6,6 +6,8 @@
 
 A Premiere Pro extension that removes the silences from my recordings and shows me where the good parts are.
 
+https://github.com/user-attachments/assets/a5f93bd5-0543-4eaa-9d22-c8ffb2d24b80
+
 I started it because I was spending way too much time going through my gaming sessions. Three or four hours of
 footage, with menus, downtime, moments where I don't say anything... Cutting all of that by hand is slow and
 tedious. Rushlight listens to the sequence audio, cuts the dead air, closes up the timeline and drops markers on
